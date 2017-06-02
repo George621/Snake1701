@@ -1,0 +1,148 @@
+*{
+				padding: 0;
+				margin: 0 auto;
+				
+			}
+.dead{
+	display: none;
+	position: absolute;
+	top: 0;
+	width:100% ;
+	height: 110%;
+	background-color: grey;
+	opacity: 0.9;
+}	
+.dead #X{
+	float: right;
+	margin:10px 30px;
+}
+#score{
+	background: gold url(../img/die.jpg) no-repeat -150px 0;
+	width: 30%;
+	height: 30%;
+	margin: 20% auto;
+	text-align: center;
+}	
+#score-inner{
+	color: red;
+}	
+#all{
+	width: 500px;
+	min-height:600px;
+	background-color: lightgray;
+	border: solid 1px green;
+	position: relative;
+}
+.speed{
+	width: 30%;
+	float: right;
+	/*height: 20px;*/
+	/*margin-left:70%;*/
+}
+#range{
+	width: 80%;
+}
+input{
+	width: 20%;
+}
+span{
+	color: white;
+}
+
+#title{
+	width: 500px;
+	height: 50px;
+	background: url(../img/logo.png) no-repeat 100%;
+
+}
+
+#scoreView{
+	width: 20%;
+	height: 20%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: red;
+}
+#caidan{
+	justify-content: space-around;	
+	text-align: center;
+}
+button{
+	margin-right: 10px;
+}
+
+	#all{
+		width: 70%;
+	}
+	#gameview{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+
+/*屏幕小于501时*/
+@media only screen and (max-width:501px ) {
+	#gameview{
+		width: 100%;
+		height: 79%;
+	}
+	#all{
+		width: 100%;
+		border-style:none ;
+		/*background-color: #008000;*/
+	}
+	#title{
+		display: none;
+	}
+	#caidan{
+		display: block;
+		height: 30px;
+		background-color: #008000;
+	}
+	
+}
+/*屏幕大于502时*/
+@media only screen and (min-width:502px ) {
+	#gameview{
+		width: 50%;
+		margin-top: 10px;
+	}
+	#all{
+		width: 60%;
+	}
+}
+/*最大*/
+/*@media only screen and (max-width:900px ) {
+	#gameview{
+		width: 100%;
+		margin-top: 10px;
+	}
+	#all{
+		width: 60%;
+	}
+}*/
+#bgpic{
+	margin-top: 20px;
+	width: 300px;
+	/*margin-left: 228px;*/
+	/*justify-content: space-around;*/
+
+}
+#bgpic img{
+	width: 50px;
+	height: 50px;
+	margin-right: 81px;
+	/*margin-left: 20px;*/
+	opacity:0
+	
+}
+#scoreView{
+	background-color: rgba(0,0,0,0);
+}
+#scoreView>img{
+	width: 20px;
+	height: 20px;
+}

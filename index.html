@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- 创建视口  width=device-width宽度为设备屏幕宽度  initial-scale=1.0初始缩放比例  			
+		user-scalable=no禁止双击画面放大-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no" />
+		<title>面向对象</title>
+		<link rel="stylesheet" href="static/css/sn.css" />	
+	</head>
+	<body>
+		<div id="all">
+			<h3 id="title"></h3>
+		    <audio src="static/img/snake.mp3" autoplay="autoplay" loop="loop"></audio>
+		    <canvas id="gameview" width="500" height="500" ></canvas>
+		    <div class="speed">
+		    	<span>快</span><input id="range" type="range" name="range" id="range" min="0" max="1" step="0.1">
+		    <span>慢</span></div>
+		    
+		    <div id="caidan">
+		    	
+		    	<button class="btn3">充值</button>
+		    	<button class="btn4">音乐</button>
+		    	<p style="color: darkslategray;">小组成员：张俊帅，王文杰，王雪，申庭宇</p>
+		    </div>
+		    <div id="bgpic">
+		    	 <!--<img src="sn/img/background.png" />-->
+		    		<img src="static/img/bg1.png" />
+		    	    <img src="static/img/bg2.jpg" />
+		    	   
+		    	    <!--<img src="sn/img/background.png" />-->
+		    </div>
+		    <div id="scoreView">
+		    	<div id="scoreView-i">
+		    		
+		    	</div>
+		    	<img src="static/img/Apple.png"/>=30;<br />
+		    	<img src="static/img/diamond.png"/>=20;<br />
+		    	<img src="static/img/food.png"/>=10;
+		    </div>
+		</div>
+		<div class="dead">
+			<span id="X">
+				关闭
+			</span>
+		    	<div id="score">
+		    		<h4 id="score-inner">2134567</h4>
+		    		<h4 id="score-max"></h4>
+		    	</div>
+		    </div>
+		
+		<script src="static/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="static/js/Snake-1.js" ></script>
+		<script>
+			$(function() {
+				var snakegame = new Snake();
+				//初始化界面，
+//				startImg.onload = function(){
+//					snakegame.init();
+//				}
+//				//点击画布，开始画背景，蛇，食物，游戏开始
+//				$("#gameview").click(function(){
+//					snakegame.paint();
+//				});
+				//直接进入游戏界面
+				bgImg.onload = function(){
+					snakegame.start();//调用开始游戏方法
+				}
+				
+			});
+			
+		</script>
+	</body>
+</html>
